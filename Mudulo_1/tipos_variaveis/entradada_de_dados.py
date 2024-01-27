@@ -9,5 +9,5 @@ elif idade >= 15:
 else:
   print("Você é menor de idade.")
 
-mensagem = "Pode tirar a carteira de habilitação" if idade >= 18 else "Você não pode tirar a carteira de habilitação!"
+mensagem = "Cara, voce ja tem 18 anos, entao voce pode tirar a porra da sua carteira de habilitação" if idade >= 18 else "Você não pode tirar a carteira de habilitação!"
 print (mensagem)
