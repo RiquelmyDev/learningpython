@@ -52,6 +52,3 @@ while True:
     break
 
 print ("Finished program.")
-
-
-# como atualizar meu repositorio ni git hub com git?
