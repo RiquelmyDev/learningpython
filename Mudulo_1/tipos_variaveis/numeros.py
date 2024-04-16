@@ -1,5 +1,5 @@
 # inteiro
-numero_inteiro = 3
+numero_inteiro = 3.2
 
 print ("Inteiro = ", numero_inteiro)
 
@@ -27,7 +27,7 @@ print ("multiplicacao 6 x 9 =", multiplicacao)
 
 # divisao /
 divisao = 100 / 10
-print ("divisao de 100 / 10 =", divisao)
+print ("divisao de 100 / 10 =", int(divisao))
 
 # como converter a divisao de float para inteiro?
 """só colocar o ---> print ("Valor em inteiro = ", int(divisao))"""
@@ -43,3 +43,5 @@ print ("Valor em float = ", float(soma))
 
 modulo = 700 % 7
 print ("modulo =", modulo)
+
+

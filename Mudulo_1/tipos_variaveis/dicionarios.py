@@ -2,7 +2,7 @@
 
 # Criando um dicionário
 
-pessoa = {"nome": "Messi", "idade": 36, "pais": "Argentina"}
+pessoa = {"nome": "Messi", "idade": 36, "pais": "Argentina", }
 
 
 print("Meu dicionário de exemplo:", pessoa)
@@ -37,7 +37,7 @@ você tem que a transformar em uma lista"""
 chaves = list (pessoa.keys())
 
 print ("Chaves do dicionário:", chaves)
-print("Primeira chave:", chaves [0])
+print ("Primeira chave:", chaves [0])
 
 # método values // também usa o list
 valores = pessoa.values()

@@ -1,5 +1,5 @@
 # Declaração
-nome_completo = "Riquelmy Soares Vasconcelos"
+nome_completo = "Riquelmx Soares Vasconcelos"
 
 nome_completo_aspas = """Riquelmy
 Soares
@@ -15,9 +15,9 @@ nome_completo = nome + " " + sobrenome
 print (nome_completo)
 
 # Formatação
-print ("Nome completo (1a forma):", nome_completo)
+print ("Nome completo (1a forma):",nome_completo)
 print ("Nome completo (2a forma):" + nome_completo)
-print ("Nome completo (3a forma):" + "Riquelmy" + "Vasconcelos")
+print ("Nome completo (3a forma):" + "Riquelmy" + " " "Vasconcelos")
 print ("Nome completo (3a forma):" + "Riquelmy", "Vasconcelos")
 print ("Nome completo (5a forma):", nome_completo_aspas )
 print ("Nome completo (6a forma):", nome_completo_quebra )
@@ -60,6 +60,7 @@ startswith e endswith dizem se sua string começa ou termina com determinados ca
 
 " " in variavel ) diz se tem esse conjunto de caracteres na sua string
 ( "" not in variavel ) diz se não tem!
+
 
 
 

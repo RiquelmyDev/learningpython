@@ -14,17 +14,17 @@ print (mensagem)
 
 
 
+time = input("Teste seu conhecimento no futebol, respondendo umas perguntas. Pronto?")
 
 
-
-
-champions = "Real madrid"
-libertadores = "Idependente"
-mls = "Inter Miami"
-
-
-time = int(input  ("Teste seu conhecimento no futebol, respondendo umas perguntas. Pronto?"))
-
-campeao = input (Qual maior campeao da libertadores?)
-if libertadores == "Real Madrid"
+campeao = input ("Qual maior campeao da Champions")
+if campeao == "Real Madrid":
   print ("isso ai, voce esta certo!")
+
+else:
+  print("Você errou, tente denovo!")
+
+campeao = input ("Qual maior campeao da Champions")
+if campeao == "Real Madrid":
+  print ("isso ai, voce esta certo!")
+
