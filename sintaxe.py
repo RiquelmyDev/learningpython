@@ -1,3 +1,0 @@
-nome = "Riquelmy" + \
-  "vasconcelos soares"
-
