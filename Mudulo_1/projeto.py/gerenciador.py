@@ -13,17 +13,31 @@ def view_tasks(tasks):
   for index, task in enumerate(tasks, start=1):
     status = "✔" if task["completed"] else " "
     name_task = task["task"]
-    print(f"{index}. [{status}] {name_task}")
-    return
+    print(f"{index} [{status}] {name_task}")
+    
   
 def raname_task(tasks, index_task, new_name_task):
   index_review = int(index_task) - 1
   if index_review >= 0 and index_review < len(tasks):
     tasks[index_review]["task"] = new_name_task
-    print (f"Taks {index_task} update to {new_name_task}")
+    print (f"Task {index_task} update to {new_name_task}")
   else: 
     print("INVALID TASK INDEX!")
-  return     
+  return
+    
+def complete_task(tasks, index_task):
+  index_review = int(index_task) - 1
+  tasks[index_review]["completed"] = True
+  print(f"Task {index_task} marked as completed!")
+  return
+
+def delete_task(tasks):
+  
+  for task in tasks:
+    if task["completed"]:
+      tasks.remove(task)
+  print("completed tasks were deleted!")
+  return
 
 tasks = []
 while True:
@@ -40,15 +54,26 @@ while True:
   if choise == "1":
     statistics = input("Enter the name of the task you want to add: ")
     add_task(tasks, statistics)
+
   elif choise == "2":
     view_tasks(tasks)
+
   elif choise == "3":
     view_tasks(tasks)
     index_task = input("Enter the number of the task you want to uptade: ")
     new_name = input("Enter the new name of this task: ")
     raname_task(tasks, index_task, new_name)
-    
+
+  elif choise == "4":
+    view_tasks(tasks)  
+    index_task = input("Enter the task number you want to complete: ")
+    complete_task(tasks, index_task)
+
+  elif choise == "5":
+    delete_task(tasks)
+    view_tasks(tasks)
+
   elif choise == "6":
     break
 
-print ("Finished program.")
+print ("Finished program!")
